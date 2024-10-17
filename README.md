@@ -54,4 +54,11 @@ Whatsapp group link (please join): <https://chat.whatsapp.com/F3kh4V3ctPfER2blsM
     - Participated in some other hackathons: mainly focused on frontend, ideation and presentation
     - Tech-related internship experience
 
+- **Ng Yau Tung**
+  - **Familiarity**
+    - **Frontend**: Very limited experience 
+    - **Backend **: Python(Flask), RAG, mongodb
+  - **Previous Experience:**
+    - MS hackathon team leader, backend development with flask and mongodb, api intergration with google form
+    - Some intern experiences
 
