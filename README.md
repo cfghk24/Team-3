@@ -44,5 +44,14 @@ Whatsapp group link (please join): <https://chat.whatsapp.com/F3kh4V3ctPfER2blsM
     - Participated in another hackathon using Flutter and Firebase, mainly focused on frontend development
     - AI Engineer Internship, mainly focused on utilizing existing models/frameworks of LLM and facial recognition. 
 
-   
+
+- **Kumar Tvesha Sanjay**
+  - linkedin: https://www.linkedin.com/in/thetvesha/ 
+  - **Familiarity:**
+    - **Frontend:** Basic experience with frontend (React.js, Flutter, JavaScript)
+    - **Backend:** Willing to learn
+  - **Relevant Experience:**
+    - Participated in some other hackathons: mainly focused on frontend, ideation and presentation
+    - Tech-related internship experience
+
 
