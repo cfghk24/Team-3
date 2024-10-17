@@ -62,3 +62,12 @@ Whatsapp group link (please join): <https://chat.whatsapp.com/F3kh4V3ctPfER2blsM
     - MS hackathon team leader, backend development with flask and mongodb, api intergration with google form
     - Some intern experiences
 
+- **Ilyas Akramov**
+  - linkedin: [https://www.linkedin.com/in/andy-yung-969487240/](https://www.linkedin.com/in/ilyasakramov/)
+  - **Familiarity:**
+    - **Frontend:** NextJS, React, Flutter, Tailwind, etc.
+    - **Backend:** Firebase, Java, SQL
+    - **Machine Learning:** PyTorch, Transformer models,
+  - **Relevant Experience:**
+    - Other hackathons with Flutter and Firebase, frontend with NextJS and TypeScript
+    - Some intern experiences
