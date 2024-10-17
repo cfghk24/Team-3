@@ -35,7 +35,7 @@ Whatsapp group link (please join): <https://chat.whatsapp.com/F3kh4V3ctPfER2blsM
     - SWE and data analytics internship
     - NLP and Machine Learning modelling
    
-- **Seoyoung KIM** Github: [seoyoungk0909]
+- **Seoyoung KIM**
   - linkedin: [Seoyoung Kim](https://www.linkedin.com/in/seoyoungkim03/)
   - **Familiarity:**
     - **Frontend:** Mostly familiar with frontend: React.js (Web), Flutter (Mobile), JavaScript, etc
