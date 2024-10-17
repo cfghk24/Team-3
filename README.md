@@ -38,7 +38,7 @@ Whatsapp group link (please join): <https://chat.whatsapp.com/F3kh4V3ctPfER2blsM
 - **Seoyoung KIM**
   - linkedin: [Seoyoung Kim](https://www.linkedin.com/in/seoyoungkim03/)
   - **Familiarity:**
-    - **Frontend:** Mostly familiar with frontend: React.js (Web), Flutter (Mobile), JavaScript, etc
+    - **Frontend:** Mostly familiar with frontend - React.js (Web), Flutter (Mobile), JavaScript, etc
     - **Backend:** Python(Flask), MongoDB, Firebase
   - **Relevant Experience:**
     - Participated in another hackathon using Flutter and Firebase, mainly focused on frontend development
