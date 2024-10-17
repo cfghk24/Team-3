@@ -25,3 +25,15 @@ Whatsapp group link (please join): <https://chat.whatsapp.com/F3kh4V3ctPfER2blsM
   - **Previous Experience:**
     - Some research experience in Machine Learning and LLM
     - Intern as Algorithm Developer (not that deep), Data Engineer
+
+- **Angeline Lukito**
+  - **Familiarity**
+    - **Frontend**: some experience using React, Tailwind CSS
+    - **Backend (My Possible Contributions)**:
+      Python(familiar), JavaScript, SQL, Machine Learning (Transformer models), Data Analytics
+  - **Previous Experience:**
+    - SWE and data analytics internship
+    - NLP and Machine Learning modelling
+   
+   
+
