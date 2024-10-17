@@ -18,7 +18,7 @@ Whatsapp group link (please join): <https://chat.whatsapp.com/F3kh4V3ctPfER2blsM
   - **Familiarity**
     - **Frontend**: not experienced, but if needed, I can try
     - **Backend (My Possible Contributions)**:
-      Python(familiar), C++, Java, SQL
+      Python(familiar), C++, Java, SQL,
       Machine Learning (Transformer models, PyTorch),
       NLP (Text analysis, Feature extraction),
       Data Engineering (Large-scale data processing, Data cleaning, Pipeline optimization).
