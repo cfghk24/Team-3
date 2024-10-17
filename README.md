@@ -14,7 +14,7 @@ Whatsapp group link (please join): <https://chat.whatsapp.com/F3kh4V3ctPfER2blsM
     - Another hackathon with Flask and MongoDB, server deployment
     - Some SWE experience in internships
    
-- **Karen, HE Siyu**
+- **Karen HE, Siyu**
   - **Familiarity**
     - **Frontend**: not experienced, but if needed, I can try
     - **Backend(My Possible Contributions)**:
