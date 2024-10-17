@@ -35,5 +35,14 @@ Whatsapp group link (please join): <https://chat.whatsapp.com/F3kh4V3ctPfER2blsM
     - SWE and data analytics internship
     - NLP and Machine Learning modelling
    
+- **Seoyoung KIM** Github: [seoyoungk0909]
+  - linkedin: [Seoyoung Kim](https://www.linkedin.com/in/seoyoungkim03/)
+  - **Familiarity:**
+    - **Frontend:** Mostly familiar with frontend: React.js (Web), Flutter (Mobile), JavaScript, etc
+    - **Backend:** Python(Flask), MongoDB, Firebase
+  - **Relevant Experience:**
+    - Participated in another hackathon using Flutter and Firebase, mainly focused on frontend development
+    - AI Engineer Internship, mainly focused on utilizing existing models/frameworks of LLM and facial recognition. 
+
    
 
