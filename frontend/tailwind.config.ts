@@ -8,12 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      spacing: {
-        '6.5': '1.625rem', // 6.5 x 4px = 26px
-      },
       colors: {
         primary: "#F3F0EA",
-        secondary: "#051c2c",
+        secondary: "#022169",
         secondary_light: "#1C3E78",
         third: "#7D6256",
         fourth: "#044F67",

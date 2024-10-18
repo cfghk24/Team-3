@@ -10,6 +10,7 @@ const menuItems = [
     {
       label: "What We Do",
       contentTitle: "Commercial Banking",
+      href: "/page",
       contentText: "From startups to legacy brands, you're making your mark. We're here to help.",
       buttonTitle: "Learn More",
       buttonUrl: "#",
@@ -25,6 +26,7 @@ const menuItems = [
     {
       label: "Insights",
       contentTitle: "Investment Banking",
+      href: "/page",
       contentText: "Strategic advice and creative financial solutions that help clients achieve their financial goals.",
       buttonTitle: "Explore",
       buttonUrl: "#",
@@ -39,6 +41,7 @@ const menuItems = [
     {
       label: "Our Firm",
       contentTitle: "Asset & Wealth Management",
+      href: "/page",
       contentText: "Delivering tailored investment solutions to help clients meet their wealth management objectives.",
       buttonTitle: "Learn More",
       buttonUrl: "#",
@@ -53,6 +56,7 @@ const menuItems = [
     {
       label: "Careers",
       contentTitle: "Global Research & Insights",
+      href: "/page",
       contentText: "Providing world-class research and insights to support our clients’ decision-making.",
       buttonTitle: "Explore",
       buttonUrl: "#",
@@ -92,7 +96,7 @@ const Navbar: React.FC = () => {
             <PopoverMenu
               key={index}
               className="ml-8"
-              labelText={<span className={`${styles.ralewayClass} ${styles.whiteMedium} text-md`}>{item.label}</span>}
+              labelText={<Link href={item.href} className={`${styles.ralewayClass} ${styles.whiteMedium} text-md`}>{item.label}</Link>}
               setActive={() => handleMouseEnter(index)} // Activate on hover
               isActive={activeItem === index} // Check if active
             />
