@@ -1,0 +1,76 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+  background: linear-gradient(to bottom right, #282c34, #3a3f47); /* Gradient background */
+  color: white; /* Text color */
+  padding: 20px; /* Padding for the entire app */
+  min-height: 100vh; /* Full height */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-bottom: 20px; /* Spacing below logo */
+  transition: transform 0.3s; /* Smooth scaling */
+}
+
+.App-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgba(40, 44, 52, 0.9); /* Slightly transparent background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 40px; /* Extra padding */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow effect */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth background and transform transitions */
+}
+
+.App-header:hover {
+  background-color: rgba(40, 44, 52, 1); /* Darken on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make links bold */
+  transition: color 0.3s, transform 0.3s; /* Smooth color and transform transition */
+}
+
+.App-link:hover {
+  color: #21a1f1; /* Change color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button {
+  background-color: #61dafb; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #21a1f1; /* Darker background on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

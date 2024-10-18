@@ -1,0 +1,32 @@
+/* src/PetRecommendations.css */
+.pet-recommendations {
+    padding: 20px;
+}
+
+.pet-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards */
+}
+
+.pet-card {
+    background-color: #f9f9f9; /* Light background for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    width: 200px; /* Fixed width for cards */
+    text-align: center; /* Center text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.pet-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.pet-image {
+    width: 100%; /* Full width of card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Slightly rounded image corners */
+}

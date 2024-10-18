@@ -1,0 +1,71 @@
+/* src/MBTIForm.css */
+.mbti-form {
+    background-color: #f0f0f0; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    max-width: 600px; /* Max width for the form */
+    margin: 20px auto; /* Center the form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
+.mbti-form h1 {
+    color: #282c34; /* Header color */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.mbti-form h3 {
+    color: #333; /* Question color */
+    margin-bottom: 10px; /* Space below questions */
+}
+
+.radio-group {
+    margin-bottom: 15px; /* Space between questions */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-around; /* Space out the labels evenly */
+}
+
+label {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center the radio button with text */
+    margin-right: 20px; /* Space between labels */
+    flex: 1; /* Allow space to grow evenly */
+}
+
+input[type="radio"] {
+    margin-right: 8px; /* Space between radio button and label text */
+}
+
+.submit-button {
+    background-color: #61dafb; /* Button color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    margin-top: 20px; /* Space above the button */
+}
+
+.submit-button:hover {
+    background-color: #21a1f1; /* Darker shade on hover */
+}
+.link-container {
+    margin-top: 20px; /* Space above the link container */
+}
+
+.link-button {
+    display: inline-block; /* Make it a block element */
+    background-color: #61dafb; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.link-button:hover {
+    background-color: #21a1f1; /* Darker shade on hover */
+}
