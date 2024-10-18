@@ -2,16 +2,28 @@ import styles from '@/style';
 import Image from 'next/image';
 
 const HeroSection: React.FC = () => {
+  const stats = [
+    { label: 'Hunger', percentage: '80%', color: 'bg-secondary' },
+    { label: 'Happy', percentage: '70%', color: 'bg-orange-700' },
+    { label: 'Energy', percentage: '50%', color: 'bg-yellow-600' },
+    { label: 'Health', percentage: '90%', color: 'bg-red-700' },
+  ];
+
+  const icons = [
+    { alt: 'Chicken Icon', src: '/image/food.png' },
+    { alt: 'Play Icon', src: '/image/play.png' },
+    { alt: 'Sleep Icon', src: '/image/sleep.png' },
+    { alt: 'Treat Icon', src: '/image/treat.png' },
+  ];
+
   return (
     <div className={`${styles.poppinsClass} fixed top-[50px] left-[65px] w-[97%] h-[700px] flex`}>
-      
-      {/* Left Column (Leaderboard and Daily Goal Section) */}
+      {/* Left Column */}
       <div className="flex flex-col items-center space-y-8 justify-center w-[370px] h-full rounded-lg">
-        {/* Daily Goal Section */}
         <div className="w-full p-4 bg-[#fef5e1] border-[5px] border-third rounded-2xl flex flex-col space-y-4">
           <div className="flex justify-between items-center">
             <h3 className="font-bold text-main_black text-lg">Daily Goal</h3>
-            <a href="#" className="text-third">EDIT GOAL</a>
+            <a href="#" className="text-third hover:underline">EDIT GOAL</a>
           </div>
           <div className="w-full flex items-center justify-between px-2">
             <div className="flex flex-col justify-center items-center">
@@ -31,7 +43,7 @@ const HeroSection: React.FC = () => {
       <div className="flex justify-center items-center flex-col w-full mr-10">
         <Image 
           alt="Dog Image"
-          src="/image/dog.svg"  // Replace with the actual image path
+          src="/image/dog.svg"
           width={250}
           height={250}
           style={{ objectFit: 'cover' }}
@@ -39,55 +51,26 @@ const HeroSection: React.FC = () => {
         />
 
         {/* Bottom text */}
-        <div className='relative flex justify-center items-center mt-12 w-[43%] h-[50px] rounded-2xl bg-white'>
-            <p className={`${styles.blackMedium} ${styles.flexCenter}`}>Hello, thank you for adopting me here!</p>
+        <div className="relative flex justify-center items-center mt-12 w-[43%] h-[50px] rounded-2xl bg-white hover:bg-blue-200 hover:cursor-pointer transition-colors duration-300">
+          <p className={`${styles.blackMedium} ${styles.flexCenter}`}>Hello, thank you for adopting me here!</p>
         </div>
 
         {/* Bottom Icons */}
         <div className="fixed bottom-14 flex justify-center items-center space-x-12">
-          {/* Chicken Icon */}
-          <div className="flex justify-center items-center w-[75px] h-[75px] bg-[#fef5e1] border-[5px] border-third rounded-2xl">
-            <Image 
-              alt="Chicken Icon"
-              src="/image/food.png"  // Replace with the actual image path
-              width={45}
-              height={45}
-              className="z-0 object-contain"
-            />
-          </div>
-
-          {/* Play Icon */}
-          <div className="flex justify-center items-center w-[75px] h-[75px] bg-[#fef5e1] border-[5px] border-third rounded-2xl">
-            <Image 
-              alt="Play Icon"
-              src="/image/play.png"  // Replace with the actual image path
-              width={45}
-              height={45}
-              className="z-0 object-contain"
-            />
-          </div>
-
-          {/* Sleep Icon */}
-          <div className="flex justify-center items-center w-[75px] h-[75px] bg-[#fef5e1] border-[5px] border-third rounded-2xl">
-            <Image 
-                alt="Sleep Icon"
-                src="/image/sleep.png"  // Replace with the actual image path
+          {icons.map((icon, index) => (
+            <div 
+              key={index} 
+              className="flex justify-center items-center w-[75px] h-[75px] bg-[#fef5e1] border-[5px] border-third rounded-2xl hover:bg-blue-200 hover:cursor-pointer hover:scale-105 transition-transform duration-300"
+            >
+              <Image 
+                alt={icon.alt}
+                src={icon.src}
                 width={45}
                 height={45}
                 className="z-0 object-contain"
-            />
-          </div>
-
-          {/* Treat Icon */}
-          <div className="flex justify-center items-center w-[75px] h-[75px] bg-[#fef5e1] border-[5px] border-third rounded-2xl">
-            <Image 
-                alt="Treat Icon"
-                src="/image/treat.png"  // Replace with the actual image path
-                width={45}
-                height={45}
-                className="z-0 object-contain"
-            />
-          </div>
+              />
+            </div>
+          ))}
         </div>
       </div>
 
@@ -101,38 +84,14 @@ const HeroSection: React.FC = () => {
         {/* Stats Section */}
         <div className="p-8 bg-[#fef5e1] border-[5px] border-third rounded-lg w-[250px] space-y-6">
           <h2 className="text-xl font-bold text-main_black">Feather's Stat</h2>
-          
-          {/* Hunger Stat */}
-          <div>
-            <p className={`${styles.blackSemibold} mb-2`}>Hunger</p>
-            <div className="w-full bg-gray-300 rounded-full h-2.5">
-              <div className="bg-secondary h-2.5 rounded-full" style={{ width: '80%' }}></div>
+          {stats.map((stat, index) => (
+            <div key={index}>
+              <p className={`${styles.blackSemibold} mb-2`}>{stat.label}</p>
+              <div className="w-full bg-gray-300 rounded-full h-2.5">
+                <div className={`${stat.color} h-2.5 rounded-full`} style={{ width: stat.percentage }}></div>
+              </div>
             </div>
-          </div>
-
-          {/* Happy Stat */}
-          <div>
-            <p className={`${styles.blackSemibold} mb-2`}>Happy</p>
-            <div className="w-full bg-gray-300 rounded-full h-2.5">
-              <div className="bg-orange-700 h-2.5 rounded-full" style={{ width: '70%' }}></div>
-            </div>
-          </div>
-
-          {/* Energy Stat */}
-          <div>
-            <p className={`${styles.blackSemibold} mb-2`}>Energy</p>
-            <div className="w-full bg-gray-300 rounded-full h-2.5">
-              <div className="bg-yellow-600 h-2.5 rounded-full" style={{ width: '50%' }}></div>
-            </div>
-          </div>
-
-          {/* Health Stat */}
-          <div>
-            <p className={`${styles.blackSemibold} mb-2`}   >Health</p>
-            <div className="w-full bg-gray-300 rounded-full h-2.5">
-              <div className="bg-red-700 h-2.5 rounded-full" style={{ width: '90%' }}></div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
