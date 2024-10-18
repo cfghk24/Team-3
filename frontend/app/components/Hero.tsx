@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
           </div>
           <div className="w-full flex items-center justify-between px-2">
             <div className="flex flex-col justify-center items-center">
-              <p className="text-3xl font-bold text-orange-500">0</p>
+              <p className="text-3xl font-bold text-yellow-600">0</p>
               <p className="text-gray-500">DAYS</p>
             </div>
             <div className="flex flex-col justify-center items-center">
