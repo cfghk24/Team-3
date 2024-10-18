@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
       </div>
       <div className="flex items-center">
         {/* Menu items */}
-        <ul className="flex items-center mr-32 space-x-12">
+        <ul className="flex items-center mr-20 space-x-12">
           {menuItems.map((item, index) => (
             <PopoverMenu
               key={index}
