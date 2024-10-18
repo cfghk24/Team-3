@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css'; // Import your CSS file
 
-const Quiz = () => {
+const QuizStructure = () => {
     const [currentQuestionId, setCurrentQuestionId] = useState(1);
     const [resultPet, setResultPet] = useState(null);
     
@@ -36,4 +36,4 @@ const Quiz = () => {
     );
 };
 
-export default Quiz;
+export default QuizStructure;
