@@ -21,7 +21,7 @@ const IdealPetResult = () => {
         <h3 className="text-lg mb-2">Meet {pet.name}</h3>
         <p className="mb-4">{pet.description}</p>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-2">
-          Adopt {pet.name} as your pet
+          Adopt {pet.name} as your virtual pet
         </button>
         <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
           Share to social media
