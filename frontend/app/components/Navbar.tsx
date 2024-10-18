@@ -10,63 +10,63 @@ import Image from 'next/image';
 const menuItems = [
   {
     label: "About",
-    contentTitle: "Commercial Banking",
-    href: "/Links/Page",
-    contentText: "From startups to legacy brands, you're making your mark. We're here to help.",
+    contentTitle: "About SPCA",
+    href: "/Links/About",
+    contentText: "Learn more about the SPCA, our mission, leadership, and the impact we strive to achieve.",
     buttonTitle: "Learn More",
     buttonUrl: "#",
     rightSectionItems: [
-      { title: "Innovation Economy", description: "Fueling the success of early-stage startups, venture-backed and high-growth companies." },
-      { title: "Midsize Businesses", description: "Keep your company growing with custom banking solutions for middle market businesses." },
-      { title: "Large Corporations", description: "Innovative banking solutions tailored to corporations and specialized industries." },
-      { title: "Commercial Real Estate", description: "Capitalize on opportunities and prepare for challenges throughout the real estate cycle." },
-      { title: "Community Impact Banking", description: "When our communities succeed, we all succeed. Local businesses and institutions need capital and expertise." },
-      { title: "International Banking", description: "Power your business' global growth and operations at every stage." }
+      { title: "Who We Are", description: "An introduction to the SPCA and our mission." },
+      { title: "Trustee", description: "Meet the trustees who guide our organization." },
+      { title: "Executive Committee", description: "An overview of our governing body and their roles." },
+      { title: "Senior Leadership Team", description: "Key leaders driving the SPCA's initiatives." },
+      { title: "Our Ambassadors", description: "Introducing the voices of the SPCA and their stories." },
+      { title: "Annual Review", description: "A comprehensive report on SPCA's accomplishments." },
     ]
   },
   {
     label: "Services",
-    contentTitle: "Investment Banking",
-    href: "/Links/Page-1",
-    contentText: "Strategic advice and creative financial solutions that help clients achieve their financial goals.",
-    buttonTitle: "Explore",
+    contentTitle: "Services We Offer",
+    href: "/Links/Services",
+    contentText: "From animal welfare to adoption services, see how we serve the community.",
+    buttonTitle: "Explore Services",
     buttonUrl: "#",
     rightSectionItems: [
-      { title: "Mergers & Acquisitions", description: "Advising on mergers, acquisitions, and other transformative transactions." },
-      { title: "Equity Capital Markets", description: "Providing access to the equity capital markets to help companies grow." },
-      { title: "Debt Capital Markets", description: "Offering a broad range of debt financing solutions tailored to our clients’ needs." },
-      { title: "Leveraged Finance", description: "Specialized in delivering innovative, bespoke financial solutions to clients." },
-      { title: "Restructuring", description: "Helping clients optimize their capital structure and navigate financial challenges." }
+      { title: "Animal Welfare", description: "Ensuring the well-being of all animals through education and advocacy." },
+      { title: "Vet Services", description: "Professional veterinary care for your pets." },
+      { title: "Adoption", description: "Help animals find their forever homes." },
+      { title: "Outreach", description: "Community programs designed to spread awareness and engage the public." },
+      { title: "Others", description: "Additional services and initiatives provided by the SPCA." },
     ]
   },
   {
-    label: "Events",
-    contentTitle: "Asset & Wealth Management",
-    href: "/Links/Page-2",
-    contentText: "Delivering tailored investment solutions to help clients meet their wealth management objectives.",
-    buttonTitle: "Learn More",
+    label: "Get Involved",
+    contentTitle: "Ways to Get Involved",
+    href: "/Links/GetInvolved",
+    contentText: "Join our cause through donations, volunteering, or attending events.",
+    buttonTitle: "Get Involved",
     buttonUrl: "#",
     rightSectionItems: [
-      { title: "Private Wealth Management", description: "Providing personalized financial strategies for high-net-worth individuals." },
-      { title: "Institutional Asset Management", description: "Helping institutions manage portfolios with bespoke asset management strategies." },
-      { title: "Real Estate Investment", description: "Maximizing returns through real estate investment strategies." },
-      { title: "Alternative Investments", description: "Offering hedge funds, private equity, and other alternative investment products." },
-      { title: "Sustainable Investing", description: "Integrating sustainability into investment strategies for long-term growth." }
+      { title: "Make a Donation", description: "Support our work through financial contributions." },
+      { title: "Events", description: "Participate in community events hosted by the SPCA." },
+      { title: "Membership", description: "Become an SPCA member and enjoy exclusive benefits." },
+      { title: "Volunteer", description: "Help out by offering your time as a volunteer." },
+      { title: "Online Pet Care Courses", description: "Learn more about pet care through our online courses." },
     ]
   },
   {
-    label: "Help Us",
-    contentTitle: "Global Research & Insights",
-    href: "/Links/Page-3",
-    contentText: "Providing world-class research and insights to support our clients’ decision-making.",
-    buttonTitle: "Explore",
+    label: "Help & Advice",
+    contentTitle: "Help & Advice for Pet Owners",
+    href: "/Links/HelpAdvice",
+    contentText: "Guidance on pet health, behavior, and more to help you care for your animals.",
+    buttonTitle: "Get Advice",
     buttonUrl: "#",
     rightSectionItems: [
-      { title: "Equity Research", description: "Delivering deep research and actionable insights on equity markets." },
-      { title: "Macro Insights", description: "Exploring global macroeconomic trends and their implications for investors." },
-      { title: "Fixed Income Research", description: "Providing in-depth analysis on fixed income instruments and markets." },
-      { title: "Quantitative Research", description: "Leveraging advanced data science techniques to uncover market opportunities." },
-      { title: "Sector Research", description: "Offering detailed sector-specific research to guide investment strategies." }
+      { title: "Preventative Pet Health", description: "Vaccinations, deworming, and other preventative care tips." },
+      { title: "Pawprint Magazine", description: "Insights, advice, and stories from SPCA's official magazine." },
+      { title: "Which Pet Is For You?", description: "Helping you decide which pet fits your lifestyle." },
+      { title: "Post-adoption Support", description: "Resources for after you adopt a pet." },
+      { title: "Pet Loss Support", description: "Guidance and support for grieving pet owners." },
     ]
   },
 ];
@@ -97,9 +97,10 @@ const Navbar: React.FC = () => {
           height={180}
           className="z-10"
         />
-
+      </div>
+      <div className="flex items-center">
         {/* Menu items */}
-        <ul className="flex items-center ml-16 space-x-8">
+        <ul className="flex items-center mr-32 space-x-12">
           {menuItems.map((item, index) => (
             <PopoverMenu
               key={index}
@@ -117,8 +118,7 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
       </div>
-
-      <ul className={`${styles.flexCenter} mr-16 space-x-8 text-[16px] tracking-[0.75px]`}>
+      <ul className={`${styles.flexCenter} mr-16 space-x-12 text-[16px] tracking-[0.75px]`}>
         <li className="relative group underline-expand-hover">
           <Link href="#" className={`${styles.blackMedium} ${styles.poppinsClass}`}>Shop</Link>
           <span className="underline-expand bg-third"></span>
