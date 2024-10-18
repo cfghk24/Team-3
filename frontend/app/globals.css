@@ -1,6 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*================ Custom Fonts ================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*================ Tailwind Setup ================*/
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
   --background: #ffffff;
@@ -15,13 +21,62 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Base class for the underline effect */
+.underline-expand {
+  position: absolute;
+  display: block;
+  height: 2.5px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease-in-out;
+  z-index: 100;
+}
+
+/* Hover effect that expands the line from the center */
+.underline-expand-hover:hover .underline-expand {
+  transform: scaleX(1);
+}
+
+/* Panel container with common styles */
+.popover-panel {
+  transition: height 0.7s ease-out, opacity 0.5s ease-out;
+  overflow: hidden;
+  z-index: 9;
+  visibility: visible;
+}
+
+/* Opening and closing animations for the panel */
+.popover-open {
+  opacity: 1;
+  height: 50vh;
+}
+
+.popover-close {
+  opacity: 0;
+  height: 0;
+}
+
+/* Content container with common styles */
+.popover-content {
+  transition: all 0.5s ease-out;
+}
+
+/* Opening and closing animations for the content */
+.content-open {
+  opacity: 1;
+}
+
+.content-close {
+  opacity: 0;
 }
