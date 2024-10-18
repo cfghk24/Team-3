@@ -1,17 +1,17 @@
 import { People } from '@mui/icons-material';
-import { Montserrat, Raleway, Playfair_Display } from 'next/font/google'; 
+import { Montserrat, Poppins, Lato } from 'next/font/google'; 
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '700'], // Adjust weights as needed
 });
 
-const raleway = Raleway({
+const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '700'],
 });
 
-const playfairDisplay = Playfair_Display({
+const lato = Lato({
   subsets: ['latin'],
   weight: ['400', '700'],
 });
@@ -56,9 +56,8 @@ const styles = {
   fontSmall: `text-sm tracking-[0.25px]`,
 
   montserratClass: montserrat.className,
-  ralewayClass: raleway.className,
-  playfairDisplayClass: playfairDisplay.className,
+  poppinsClass: poppins.className,
+  latoClass: lato.className,
 };
 
 export default styles;
-

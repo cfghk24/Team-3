@@ -5,10 +5,11 @@ import Link from "next/link";
 import PopoverMenu from "./Popover/PopoverMenu";
 import PopoverContent from "./Popover/PopoverContent";
 import styles from "@/style";
+import Image from 'next/image';
 
 const menuItems = [
   {
-    label: "What We Do",
+    label: "About",
     contentTitle: "Commercial Banking",
     href: "/Links/Page",
     contentText: "From startups to legacy brands, you're making your mark. We're here to help.",
@@ -24,7 +25,7 @@ const menuItems = [
     ]
   },
   {
-    label: "Insights",
+    label: "Services",
     contentTitle: "Investment Banking",
     href: "/Links/Page-1",
     contentText: "Strategic advice and creative financial solutions that help clients achieve their financial goals.",
@@ -39,7 +40,7 @@ const menuItems = [
     ]
   },
   {
-    label: "Our Firm",
+    label: "Events",
     contentTitle: "Asset & Wealth Management",
     href: "/Links/Page-2",
     contentText: "Delivering tailored investment solutions to help clients meet their wealth management objectives.",
@@ -54,7 +55,7 @@ const menuItems = [
     ]
   },
   {
-    label: "Careers",
+    label: "Help Us",
     contentTitle: "Global Research & Insights",
     href: "/Links/Page-3",
     contentText: "Providing world-class research and insights to support our clients’ decision-making.",
@@ -86,17 +87,26 @@ const Navbar: React.FC = () => {
   const isActive = activeItem !== null;
 
   return (
-    <nav className={`fixed flex justify-between items-center top-0 left-0 w-full h-[70px] bg-secondary tracking-[0.75px] z-50`}>
-      <div className={`flex items-center ml-16`}>
-        <h2 className={`${styles.whiteMedium} ${styles.montserratClass} text-[26px]`}>Explorer</h2>
-        <ul className="flex items-center ml-16">
+    <nav className={`fixed flex justify-between items-center top-0 left-0 w-full h-[70px] bg-white tracking-[0.75px] z-50`}>
+      <div className={`flex items-center ml-8`}>
+        {/* Logo section */}
+        <Image 
+          alt="Corporate Image"
+          src="/image/spcaLogo.png" 
+          width={180}
+          height={180}
+          className="z-10"
+        />
+
+        {/* Menu items */}
+        <ul className="flex items-center ml-16 space-x-8">
           {menuItems.map((item, index) => (
             <PopoverMenu
               key={index}
               className="ml-8"
               labelText={
-                <Link href={item.href} replace>
-                  <span className={`${styles.ralewayClass} ${styles.whiteMedium} text-md cursor-pointer`}>
+                <Link href={item.href}>
+                  <span className={`${styles.poppinsClass} ${styles.blackMedium} text-md cursor-pointer`}>
                     {item.label}
                   </span>
                 </Link>
@@ -110,11 +120,11 @@ const Navbar: React.FC = () => {
 
       <ul className={`${styles.flexCenter} mr-16 space-x-8 text-[16px] tracking-[0.75px]`}>
         <li className="relative group underline-expand-hover">
-          <Link href="#" className={`${styles.whiteMedium} ${styles.ralewayClass}`}>Contact Us</Link>
+          <Link href="#" className={`${styles.blackMedium} ${styles.poppinsClass}`}>Shop</Link>
           <span className="underline-expand bg-third"></span>
         </li>
         <li className="relative group underline-expand-hover">
-          <Link href="#" className={`${styles.whiteMedium} ${styles.ralewayClass}`}>Login</Link>
+          <Link href="#" className={`${styles.blackMedium} ${styles.poppinsClass}`}>Contact</Link>
           <span className="underline-expand bg-third"></span>
         </li>
       </ul>
