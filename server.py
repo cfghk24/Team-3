@@ -15,7 +15,7 @@ CORS(
     app,
     resources={r"/*": {"origins": "*"}},
 )
-team3: team3isthewinner
+# team3: team3isthewinner
 # MongoDB connection
 client = MongoClient(
     "mongodb+srv://team3:team3isthewinner@cluster0.sbx3m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
@@ -25,4 +25,10 @@ db = client["jpm-cfg"]
 # return "Connected to MongoDB"
 
 
+def main():
+    app.run(host="127.0.0.1", port=8080, debug=True)
+
+
+if __name__ == "__main__":
+    main()
 # Your Flask routes and other code here
