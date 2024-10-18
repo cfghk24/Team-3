@@ -1,49 +1,31 @@
-from flask import Flask, jsonify, request, make_response
-
-# from werkzeug.security import generate_password_hash, check_password_hash
-import os
-from flask_cors import CORS, cross_origin
-from datetime import datetime
+from flask import Flask, jsonify
+from flask_cors import CORS
 from pymongo import MongoClient
 import logging
+import requests
 
 logging.basicConfig(level=logging.INFO)
+
 app = Flask(__name__)
-# CORS(app)
-app.config["CORS_HEADERS"] = "Content-Type"
-CORS(
-    app,
-    resources={r"/*": {"origins": "*"}},
-)
-# team3: team3isthewinner
+CORS(app, resources={r"/*": {"origins": "*"}})
+
 # MongoDB connection
 client = MongoClient(
     "mongodb+srv://team3:team3isthewinner@cluster0.sbx3m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 )
-db = client["jpm-cfg"]
-
-restaurant = db["restaurant"]
-users = db["users"]
-# accounts = db["accounts"]
-badges = db["badges"]
-
-# return "Connected to MongoDB"
+db = client["database"]  # Correctly accessing the database
 
 
-@app.route("/api/service/restaurant", methods=["GET"])
-@cross_origin()
-def get_all_events():
-    location = request.args.get("location")
-    if location not in ["kowloon", "hk-island"]:
-        return jsonify({"error": "Invalid location"}), 400
-
+@app.route("/api/get_pet_data", methods=["GET"])
+def get_data():
     try:
-        all_events = list(restaurant.find({"location": location}))
-        for event in all_events:
-            event["_id"] = str(event["_id"])
-        return jsonify(all_events), 200
+        pet_data = list(db.pet.find())  # Accessing the correct collection
+        for pet in pet_data:
+            pet["_id"] = str(pet["_id"])
+        return jsonify(pet_data), 200  # Returns data as JSON with status code
     except Exception as e:
-        return jsonify({"error": str(e)}), 400
+        logging.error(f"Error fetching pet data: {e}")
+        return jsonify({"error": "Failed to fetch pet data"}), 500  # Handle errors
 
 
 def main():
@@ -93,4 +75,3 @@ def add_restaurant():
 
 if __name__ == "__main__":
     main()
-# Your Flask routes and other code here
